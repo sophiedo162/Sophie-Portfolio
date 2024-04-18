@@ -126,6 +126,9 @@ b {
     padding: 120px 40px 0 10px;
     text-align: left;
 }
+.title {
+    display: none;
+}
 .top {
     width: 100%;
     height: 55%;
@@ -310,17 +313,51 @@ b {
     }
     .top {
         background-image: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 50px 0;
     }
+ 
     .intro {
         display: none;
     }
     .list {
         display: none;
     }
+    .title {
+        display: block;
+        margin-left: 40px;
+    }
     .nameImage {
         display: block;
+        margin-top: -30px;
+        margin-left: -10px;
     }
     .portfolioImage {
         display: block;
+        margin-top: -40px;
+        margin-left: 45px;
+    }
+    .resume {
+        display: none;
+    }
+    .navbar-brand img {
+        filter: invert(100%);
+        margin-left: -10px;
+    }
+    .navbarIcon {
+        padding-left: 4px;
+    }
+    .navbar {
+        padding-right: 25px;
+    } 
+    footer {
+        width: 170%;
+       justify-content: right;
+    }
+    .socialIcon img {
+        padding: 1px;
+        margin-left: 10px;
+
     }
 }
