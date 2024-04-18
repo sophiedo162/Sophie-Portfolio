@@ -305,7 +305,7 @@ b {
 }
 }
 
-@media all and (max-width: 615px) {
+@media all and (max-width: 617px) {
     .portrait {
         display: none;
     }
