@@ -1,0 +1,261 @@
+body {
+    font-family: "Sen", sans-serif;
+}
+h2 {
+    font-weight: 500;
+    font-size: 36px;
+}
+p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom {
+    display: flex;
+    height: calc( 100% - 550px );
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    padding-right: 40px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.btn {
+    color: black;
+    text-decoration: none;
+}
+.name {
+    color: white;
+    position: absolute;
+    text-align: right;
+    width: 44%;
+    padding-top: 30px;
+}
+.name h1 {
+    font-size: 46px;
+    margin-top: -15px;
+    position: relative;
+}
+b {
+    font-weight: 900;
+}
+.name h1 b::after {
+    display: block;
+    content: '';
+   width: 55%;
+   height: 1px;
+   background: white;
+   position: absolute;
+   bottom: 12px;
+   left: 43%;
+}
+.name h1 span {
+    position: relative;
+}
+.name h1 span::after {
+    display: block;
+    content: '';
+   width: 120%;
+   height: 1px;
+   background: white;
+   position: absolute;
+   bottom: 12px;
+   right: 5%;
+}
+.portrait {
+    width: 45%;
+}
+.portrait img {
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+.navbar {
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    background-color: transparent !important;
+}
+.nav-item {
+    margin-left: 5px;
+    font-size: 22px;
+}
+.navbar-brand {
+    margin-left: 50px;
+    display: flex;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.navbar-brand img {
+    padding-right: 20px;
+    width: 55px;
+}
+.navbar-brand p {
+    padding-top: 3px;
+    display: none;
+}
+/* .navbar-brand p::after {
+    content:""; 
+    float:left; 
+    background:black; 
+    width: 150%; 
+    height:0.5px; 
+    margin-left: 3px;
+    margin-top: -7px;
+} */
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+.myName {
+    width: 55%;
+}
+.intro {
+    padding: 120px 40px 0 10px;
+    text-align: left;
+}
+.top {
+    width: 100%;
+    height: 55%;
+    background-image: url('intro-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .nameImage {
+    width: 40%;
+}
+.nameImage img {
+    margin-top: -20px;
+} */
+
+.intro .btn {
+    width: 150px;
+    height: 80px;
+    background-image: url('button-shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 21px;
+    padding-bottom: 12px;
+}
+.resume {
+    width: 30%;
+    display: flex;
+    position: relative;
+}
+.resume p::after {
+    content:""; 
+    display: block;
+    position: absolute;
+    background:black; 
+    width: 100%; 
+    height:0.5px; 
+    top: 24px;
+    left: 2px;
+
+}
+.circle {
+    background-image: url('Ellipse2.png');
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 15px;
+}
+.list a {
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+    padding: 20px 40px 0;
+    font-weight: 600;
+
+}
+.list {
+    height: 300px;
+}
+.socialIcon a {
+    padding: 5px;
+}
+.portfolioImage {
+    display: none;
+}
+.nameImage {
+    display: none;
+}
+
+@media all and (max-width: 991px) {
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .name h1 {
+        font-size: 40px;;
+    }
+    .name h1 b::after {
+        bottom: 10px;
+        width: 80%;
+        left: 15%;
+    }
+    .name h1 span::after {
+        bottom: 10px;
+    }
+    .list a {
+        font-size: 24px;
+        padding: 5px;
+    }
+   .intro {
+        padding-top: 90px;
+   }
+   .top {
+     height: 48%;
+   }
+   .circle {
+        margin: 10px;
+   }
+   .resume p::after {
+    top: 19px;
+   }
+   .socialIcon {
+    margin-right: -25px;
+   }
+   .socialIcon a {
+    padding: 0;
+   }
+}
+@media all and (max-width: 430px) {
+    .portrait {
+        display: none;
+    }
+    body {
+        background-color: #EDEDED;
+    }
+    .top {
+        background-image: none;
+    }
+    .intro {
+        display: none;
+    }
+    .list {
+        display: none;
+    }
+    .nameImage {
+        display: block;
+    }
+    .portfolioImage {
+        display: block;
+    }
+}
