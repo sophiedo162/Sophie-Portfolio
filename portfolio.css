@@ -105,7 +105,7 @@ b {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
  }
- 
+
 .navbar-nav > li > a:hover {
     color: #A04A4D!important;
 }
@@ -113,8 +113,15 @@ b {
     color: #A04A4D!important;
     font-weight: 500;
 }
-.navbar-nav > li > .active::after {
-
+.active::after {
+    content:""; 
+    display: block;
+    position: absolute;
+    background:#A04A4D; 
+    width: 10%; 
+    height:0.8px; 
+    top: 50.5px;
+    right: 392px;
 }
 
 .nav-item {
@@ -249,6 +256,10 @@ b {
     .list a {
         font-size: 24px;
         padding: 5px;
+    }
+    .active::after {
+        content:""; 
+        display: none;
     }
    .intro {
         padding-top: 90px;
