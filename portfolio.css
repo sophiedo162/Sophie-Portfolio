@@ -87,6 +87,36 @@ b {
     width: 100%;
     background-color: transparent !important;
 }
+.navbar-nav > li > .dropdown-menu {    
+     background-image: url("background-dropdown.png");  
+     background-size: cover;
+     height: 110px;
+     margin-left: -40px;
+     margin-top: -10px;
+     background-repeat: no-repeat;
+}
+.navbar-nav > li > .dropdown-menu a {   
+    color: white; 
+    text-align: right;
+    padding-top: 10px;
+ }
+ .navbar-nav > li > .dropdown-menu a:hover {
+    background: -webkit-linear-gradient(#F3CE88, #FFE7CA, #FFE5B3, #F6C883);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ 
+.navbar-nav > li > a:hover {
+    color: #A04A4D!important;
+}
+.navbar-nav > li > .active {
+    color: #A04A4D!important;
+    font-weight: 500;
+}
+.navbar-nav > li > .active::after {
+
+}
+
 .nav-item {
     margin-left: 5px;
     font-size: 22px;
