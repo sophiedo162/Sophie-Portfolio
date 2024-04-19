@@ -19,7 +19,7 @@ p {
     display: flex;
     height: 45%;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 footer {
     display: flex;
@@ -75,11 +75,13 @@ b {
 }
 .portrait {
     width: 45%;
+    border: 1px solid black;
 }
 .portrait img {
     padding: 0px;
     width: 100%;
-    height: auto;
+    height: 100vh;
+    
 }
 .navbar {
     position: absolute;
@@ -107,17 +109,17 @@ b {
  }
 
 .navbar-nav > li > a:hover {
-    color: #A04A4D!important;
+    color: #781114!important;
 }
 .navbar-nav > li > .active {
-    color: #A04A4D!important;
+    color: #781114!important;
     font-weight: 500;
 }
 .active::after {
     content:""; 
     display: block;
     position: absolute;
-    background:#A04A4D; 
+    background:#781114; 
     width: 10%; 
     height:0.8px; 
     top: 50.5px;
@@ -142,15 +144,6 @@ b {
     padding-top: 3px;
     display: none;
 }
-/* .navbar-brand p::after {
-    content:""; 
-    float:left; 
-    background:black; 
-    width: 150%; 
-    height:0.5px; 
-    margin-left: 3px;
-    margin-top: -7px;
-} */
 
 .navbar-nav {
     margin-left: auto;
@@ -158,6 +151,7 @@ b {
 }
 .myName {
     width: 55%;
+    height: 100vh;
 }
 .intro {
     padding: 120px 40px 0 10px;
@@ -173,12 +167,6 @@ b {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* .nameImage {
-    width: 40%;
-}
-.nameImage img {
-    margin-top: -20px;
-} */
 
 .intro .btn {
     width: 150px;
@@ -190,10 +178,18 @@ b {
     font-size: 21px;
     padding-bottom: 12px;
 }
+.intro .btn:hover {
+    color: white;
+    background-image: url('button-background.png');
+    transition: 0.3s ease;
+}
 .resume {
     width: 30%;
     display: flex;
     position: relative;
+}
+.resume a:hover {
+    color: #781114;
 }
 .resume p::after {
     content:""; 
@@ -206,24 +202,31 @@ b {
     left: 2px;
 
 }
-.circle {
-    background-image: url('Ellipse2.png');
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 15px;
-}
+
 .list a {
+    background-image: url('Ellipse2.png');
+    background-size: 20px;
+    background-position-x: right;
+    background-position-y: 65%;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: right;
     font-size: 30px;
-    padding: 20px 40px 0;
+    padding: 0 40px;
+    margin: 20px 20px;
     font-weight: 600;
-
+    height: 40px;
 }
+.list a:hover {
+    color: #781114;
+    text-shadow: 2px 2px 0px #dddddd;
+    background-image: url('hover-btn.png');
+    background-size: 30px;
+    transition: 0.3s ease;
+}
+
 .list {
-    height: 62%;
+    height: 50%;
 }
 .socialIcon a {
     padding: 5px;
@@ -255,7 +258,7 @@ b {
     }
     .list a {
         font-size: 24px;
-        padding: 5px;
+        padding: 10px 35px 35px;
     }
     .active::after {
         content:""; 
@@ -265,7 +268,7 @@ b {
         padding-top: 90px;
    }
    .top {
-    height: 65%;
+    height: 60%;
    }
    .circle {
         margin: 10px;
@@ -311,10 +314,6 @@ b {
         bottom: 8px;
         right: 2px;
     }
-    .list a {
-        font-size: 20px;
-        padding: 5px;
-    }
    .intro {
         padding-top: 55px;
    }
@@ -346,7 +345,7 @@ b {
 }
 }
 
-@media all and (max-width: 617px) {
+@media all and (max-width: 580px) {
     .portrait {
         display: none;
     }
