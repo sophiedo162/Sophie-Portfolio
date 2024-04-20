@@ -83,6 +83,7 @@ b {
     height: 100vh;
     
 }
+
 .navbar {
     position: absolute;
     padding-top: 20px;
@@ -239,6 +240,41 @@ b {
 }
 
 @media all and (max-width: 991px) {
+    .navbarIcon {
+        padding-left: 4px;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-nav {
+        margin-top: 10px;
+        background-image: url('background-dropdown-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 45%;
+        height: 270px;
+        border-right : 2.5px solid #F6C883;
+        text-align: right;
+    }
+    .navbar-nav > li > a {
+        color: white!important;
+        margin-right: 20px;
+    }
+    .navbar-nav > li > .active {
+        color: white!important;
+    } 
+    .navbar-nav > li > a:hover {
+        background: -webkit-linear-gradient(#F3CE88, #FFE7CA, #FFE5B3, #F6C883);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .navbar-nav > li > .dropdown-menu {
+        background: none;
+        border: none;
+    }
+    .navbar-nav > li > .dropdown-menu a {
+        padding-top:5px;
+    }
     h2 {
         font-size: 30px;
     }
@@ -291,11 +327,10 @@ b {
     font-weight: 700;
     font-size: 16px;
     padding-bottom: 25px;
-}
+    }   
 }
 
 @media all and (max-width: 844px) {
-    
     h2 {
         font-size: 22px;
     }
@@ -346,6 +381,9 @@ b {
 }
 
 @media all and (max-width: 580px) {
+    .navbar-nav {
+        width: 90%;
+    }
     .portrait {
         display: none;
     }
@@ -377,7 +415,7 @@ b {
     }
     .portfolioImage {
         display: block;
-        margin-top: -40px;
+        margin-top: -90px;
         margin-left: 45px;
     }
     .resume {
@@ -387,8 +425,8 @@ b {
         filter: invert(100%);
         margin-left: -10px;
     }
-    .navbarIcon {
-        padding-left: 4px;
+    .bottom {
+        justify-content: flex-start;
     }
     .navbar {
         padding-right: 25px;
